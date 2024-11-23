@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <title>Hotel Menu</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="profile-option">
+      <a href="#">My Profile</a>
+    </div>
+  </nav>
+  <div class="menu-container">
+    <h1>Hotel Menu</h1>
+    <table id="menu-table">
+      <thead>
+        <td colspan="3">
+          Hotel Status:
+          <div class="styled-textbox" id="hotel-status">Full</div>
+      </td>
+      <!-- <td><button onclick="notify()">Notify</button></td> -->
+      <tr>
+        <tr>
+          <th>Item</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Quantity</th> <!-- Updated heading -->
+          <th>Select</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paneer Tikka</td>
+          <td>Veg</td>
+          <td>435 RS</td>
+          <td><input type="number" min="1" max="10" value="1"></td> <!-- Input type number added -->
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Chicken biryani</td>
+          <td>Non_Veg</td>
+          <td>700 RS</td>
+          <td><input type="number" min="1" max="10" value="1"></td> <!-- Input type number added -->
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Malai Kofta</td>
+          <td>Veg</td>
+          <td>550 RS</td>
+          <td><input type="number" min="1" max="10" value="1"></td> <!-- Input type number added -->
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Wheat Roti</td>
+          <td>Veg</td>
+          <td>1000 RS</td>
+          <td><input type="number" min="1" max="10" value="1"></td> <!-- Input type number added -->
+          <td><input type="checkbox"></td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+  <button onclick="calculateTotalPrice()">Confirm Order</button>
+  <div id="total-price"></div>
+  <script src="menu.js"></script>
+</body>
+</html>
